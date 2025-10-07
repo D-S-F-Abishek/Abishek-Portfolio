@@ -26,9 +26,7 @@
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
     font-family: 'Inter', sans-serif;
@@ -68,14 +66,8 @@ body::before {
 }
 
 /* --- Headings --- */
-section {
-    margin-top: 8rem; /* increased space between headings */
-}
-h1,h2,h3 {
-    font-weight: 600;
-    color:#fff;
-    margin-bottom:1rem;
-}
+section { margin-top: 8rem; }
+h1,h2,h3 { font-weight: 600; color:#fff; margin-bottom:1rem; }
 h1{font-size:2.8rem;}
 h2{font-size:2.2rem; border-bottom:2px solid var(--accent-color); padding-bottom:0.5rem; display:inline-block;}
 h3{font-size:1.4rem; color: var(--accent-color);}
@@ -123,7 +115,16 @@ h3{font-size:1.4rem; color: var(--accent-color);}
 }
 .hero-content h1 span{color: var(--accent-color);}
 .hero-content p{font-size:1.1rem;color: var(--text-muted); margin-bottom:2rem;}
-.cta-button{display:inline-block; background-color:var(--accent-color); color:#fff; padding:12px 24px; border-radius:8px; font-weight:600; text-decoration:none; transition:0.3s;}
+.cta-button{
+    display:inline-block; 
+    background-color:var(--accent-color); 
+    color:#fff; 
+    padding:12px 24px; 
+    border-radius:8px; 
+    font-weight:600; 
+    text-decoration:none; 
+    transition:0.3s;
+}
 .cta-button:hover{transform:translateY(-3px); box-shadow:0 4px 15px rgba(0,123,255,0.4);}
 
 /* --- Skills Grid --- */
@@ -251,20 +252,21 @@ footer{text-align:center;padding:2rem 0;background-color:var(--primary-color);bo
             <img src="Abishek passport size photo.jpg" alt="Abishek D S F">
             <div>
                 <h1>Hi, I'm <span>Abishek D.S.F</span></h1>
-                <p>An aspiring Computer Science Engineer with a passion for <strong>Machine Learning</strong>, problem-solving, and building impactful, end-to-end projects.</p>
-                <a href="#projects" class="cta-button">View My Work</a>
+                <p>An aspiring Computer Science Student with a passion for <strong>Machine Learning</strong>, problem-solving, and building impactful, end-to-end projects.</p>
+                <!-- Buttons with Download Resume -->
+                <div style="display:flex; gap:15px; flex-wrap:wrap; margin-top:1rem;">
+                    <a href="#projects" class="cta-button">View My Work</a>
+                    <a href="D S F ABISHEK_Resume.pdf" download class="cta-button">Download Resume</a>
+                </div>
             </div>
         </div>
     </div>
 </section>
-
 <section id="about">
     <div class="container">
         <h2>About Me</h2>
         <p style="margin-top:2rem; max-width:800px; color:var(--text-muted); font-size:1.1rem;">
-            I am a motivated individual with a strong interest in <strong>Machine Learning</strong> and its real-world applications. My passion lies in
-            exploring how intelligent systems can solve complex problems efficiently on their own. I am eager to grow in this field through
-            continuous learning and hands-on experience.
+           Aspiring Machine Learning student with a strong passion for developing intelligent systems that autonomously solve complex, real-world challenges. Committed to continuous growth through rigorous learning and hands-on experimentation, with a focus on applying advanced algorithms to drive efficient, scalable solutions.
         </p>
     </div>
 </section>
@@ -414,12 +416,15 @@ footer{text-align:center;padding:2rem 0;background-color:var(--primary-color);bo
             <li>Some of the blockchain hackathons are HackVerse 2025, Build on Stacks (SRM KTR), V-Medithon (VIT Chennai)</li>
             <li>Attracted to complex concepts by breaking into simpler components</li>
             <li>Thiruvallur District Chess Champion (U-13)</li>
+            <li>Currently placed top 15000 globally with a rapid rating of 2196 on chesscom</li>
             
             
         </ul>
     </div>
 </section>
 </main>
+
+<!-- The rest of your sections (About, Skills, Education, Certifications, Projects, Achievements) remain unchanged -->
 
 <script>
 const menuToggle=document.getElementById('menu-toggle');
